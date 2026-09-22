@@ -18,7 +18,10 @@ class _ChromaLocalEmbeddings:
     LangChain interface (embed_documents / embed_query)."""
 
     def __init__(self) -> None:
-        from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
+        try:
+            from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
+        except Exception:
+            from chromadb.lib.embedding_functions import DefaultEmbeddingFunction
 
         self._fn = DefaultEmbeddingFunction()
 
