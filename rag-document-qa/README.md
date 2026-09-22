@@ -2,7 +2,7 @@
 
 Retrieval-augmented generation pipeline that ingests PDF documents, chunks and embeds the text into a ChromaDB vector store, and answers questions with source-grounded responses via the Mistral API — exposed through a Streamlit interface.
 
-# 🌐 Live Demo: https://aiprojects-m2drvrjerunbnytejdmr7j.streamlit.app/
+### 🌐 Live Demo: https://aiprojects-m2drvrjerunbnytejdmr7j.streamlit.app/
 
 ## Stack
 
